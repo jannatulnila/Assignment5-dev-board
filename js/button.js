@@ -3,7 +3,7 @@ const taskCount =document.getElementById('taskCount');
 const assignCount =document.getElementById('assigned-count');
 const date = document.getElementById("date");
 const showActivity = document.getElementById("show-activity");
-const clearHistoryBtn = document.getElementById("clear-History");
+const clearHistoryBtn = document.getElementById("clearHistory");
 
 let totalTask = 23;
 let assign =6;
@@ -13,10 +13,9 @@ let count =0;
 taskCount.textContent = totalTask;
 assignCount.textContent = `0${assign}`;
 
+
 const clear = ()=> showActivity.innerHTML = "";
 clear();
-
-
 
 const currentDate = new Date();
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -53,5 +52,7 @@ allBtn.forEach((btn) => {
     
     });
 });
-clearHistoryBtn.addEventListener("click", clear);
 
+
+
+clearHistoryBtn.addEventListener("click", clear);
