@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+<style>
+   .btn{
+      background-color: #3752FD;
+      color: black;
+   }
+</style>
+</head>
+<body class="bg-blue-100 pb-10">
+    <header class="max-w-[1200] mx-auto mt-4 p-4 bg-white rounded-lg flex items-center justify-between">
+        <div class="flex items-center">
+            <img class="w-10 " src="assets/logo.png" alt="">
+            <h2 class="text-2xl">Dev <span class="font-bold">Board</span></h2>
+        </div>
+        <button id="backToDask" class="btn  rounded-lg">back to dask</button>
+
+    </header>
+
+    <main class="max-w-[1200px mx-auto]">
+     <h2 class="font-bold text-3xl my-5 text-center">Blogs</h2>
+
+     <div class="mb-5 rounded-md bg-white">
+        <h2 class="font-semibold text-black text-sm pb-3 border-b px-5 pt-5">Question-1: What are the different ways to select an element in the DOM?</h2>
+        <p class="py-4 text-gray-600 text-base px-5 pb-5">elements can be selected in different ways using javaScript. For example <q>getElementByID()</q>, <q>getElementByClassName()</q>,  <q>getElementByTagName()</q>, <q>querySelector()</q>, <q>querySelectorAll()</q></p>
+     </div>
+     <div class="mb-5 rounded-md bg-white">
+        <h2 class="font-semibold text-black text-sm pb-3 border-b px-5 pt-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+        <p class="py-4 text-gray-600 text-base px-5 pb-5">The innerHTML property recognizes HTML tags and renders the content according to the tags. innerText and textContent ignore HTML tags and treat them as part of the text</p>
+     </div>
+     <div class="mb-5 rounded-md bg-white">
+        <h2 class="font-semibold text-black text-sm pb-3 border-b px-5 pt-5">Question-3: What is event delegation in the DOM?</h2>
+        <p class="py-4 text-gray-600 text-base px-5 pb-5">Event delegation is a JavaScript technique that optimizes event handling by attaching a single event listener to a parent element, rather than multiple listeners to child elements</p>
+     </div>
+     <div class="mb-5 rounded-md bg-white">
+        <h2 class="font-semibold text-black text-sm pb-3 border-b px-5 pt-5">Question-4: What is event bubbling in the DOM?</h2>
+        <p class="py-4 text-gray-600 text-base px-5 pb-5">Event bubbling can be defined as a phase of Event propagation in which if an event occurs on a particular element will propagate or bubble up to the ancestor or the parent elements in the DOM hierarchy</p>
+     </div>
+     <div class="mb-5 rounded-md bg-white">
+        <h2 class="font-semibold text-black text-sm pb-3 border-b px-5 pt-5">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+        <p class="py-4 text-gray-600 text-base px-5 pb-5">For create an element we can use <q>document.createElement</q>. After create an element we can add it to the page using methods like: <q>append(), appendChild(), innerHTML</q>. we can remove that element  using js: <q>remove(), removeChild()</q></p>
+     </div>
+    </main>
+    <script src="./js/backtodask.js"></script>
+    
+</body>
+</html>
+
+
+
+
