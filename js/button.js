@@ -13,13 +13,16 @@ let count =0;
 taskCount.textContent = totalTask;
 assignCount.textContent = `0${assign}`;
 
+const clear = ()=> showActivity.innerHTML = "";
+clear();
 
-const btnDisabled = (btn) => btn.classList.add('disabled');
+
 
 const currentDate = new Date();
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 date.textContent = `${months[currentDate.getMonth()]} ${currentDate.getDate()} ${currentDate.getFullYear()}`;
 
+const btnDisabled = (btn) => btn.classList.add('disabled');
 
 allBtn.forEach((btn) => {
     btn.addEventListener("click", function (e) {
